@@ -1,3 +1,5 @@
+import '../css/MovieCard.css';
+
 function MovieCard ({ movie }) {
     const onLike = () => {
         console.log('You liked the movie');
@@ -9,7 +11,7 @@ function MovieCard ({ movie }) {
                 <img src={movie.url} alt={movie.title} />
                 ♡
             </div>
-            <div className="mvie-overlay">
+            <div className="movie-overlay">
                 <button className="favorite-btn" onClick={onLike}></button>
             </div>
             <div className="movie-info">    
